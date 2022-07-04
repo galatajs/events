@@ -1,8 +1,8 @@
 {
   "name": "@istanbul/events",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Events package of istanbul framework",
-  "homepage": "https://github.com/ssibrahimbas/istanbul/tree/master/packages/events",
+  "homepage": "https://github.com/istanbulnode/events#readme",
   "keywords": [
     "istanbul",
     "events",
@@ -13,10 +13,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ssibrahimbas/istanbul.git"
+    "url": "https://github.com/istanbulnode/events.git"
   },
   "bugs": {
-    "url": "https://github.com/ssibrahimbas/istanbul/issues"
+    "url": "https://github.com/istanbulnode/events/issues"
   },
   "directories": {
     "lib": "lib",
