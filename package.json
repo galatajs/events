@@ -1,0 +1,50 @@
+{
+  "name": "@istanbul/events",
+  "version": "0.0.4",
+  "description": "Events package of istanbul framework",
+  "homepage": "https://github.com/ssibrahimbas/istanbul/tree/master/packages/events",
+  "keywords": [
+    "istanbul",
+    "events",
+    "lifecycle",
+    "event-emitter"
+  ],
+  "author": "Sami Salih İBRAHİMBAŞ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssibrahimbas/istanbul.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ssibrahimbas/istanbul/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "test": "jest --watchAll --no-cache",
+    "clear": "del-cli ./build/*",
+    "build": "npm run clear && tsc"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.3",
+    "@types/node": "^18.0.0",
+    "jest": "^28.1.1",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "@/(.*)": "<rootDir>/$1",
+      "~/(.*)": "<rootDir>/$1"
+    }
+  }
+}
