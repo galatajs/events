@@ -1,31 +1,10 @@
-import {
-  createEventListener,
-  ListenerCreator,
-} from "../listener/event.listener";
-import {
-  createEventPublisher,
-  EventPublisher,
-} from "../publisher/event.publisher";
+import { createEventListener } from "../listener/event.listener";
+import { createEventPublisher } from "../publisher/event.publisher";
 import { EventEmitter } from "events";
+import { CreateEventOptions, EventService } from "../types/event.types";
 
-/**
- * @author Sami Salih İbrahimbaş
- * @since 0.0.1
- * */
-export type EventService<T> = {
-  /**
-   * Listen to an event.
-   * @author Sami Salih İbrahimbaş
-   * @since 0.0.1
-   * */
-  addListener: ListenerCreator<T>;
-
-  /**
-   * Publish event to listeners.
-   * @author Sami Salih İbrahimbaş
-   * @since 0.0.1
-   * */
-  publish: EventPublisher<T>;
+export const DefaultOptions: CreateEventOptions = {
+  maxListeners: 1000,
 };
 
 /**
@@ -33,8 +12,12 @@ export type EventService<T> = {
  * @author Sami Salih İbrahimbaş
  * @since 0.0.1
  * */
-export const createEvent = <T>(event: string): EventService<T> => {
+export const createEvent = <T>(
+  event: string,
+  options: CreateEventOptions = DefaultOptions
+): EventService<T> => {
   const emitter = new EventEmitter();
+  emitter.setMaxListeners(options.maxListeners);
   return {
     addListener: createEventListener<T>(emitter, event),
     publish: createEventPublisher<T>(emitter, event),
