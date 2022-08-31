@@ -7,3 +7,4 @@
 export * from "./lib/hooks/event.hooks";
 export { EventPublisher } from "./lib/publisher/event.publisher";
 export { EventListener, ListenerCreator } from "./lib/listener/event.listener";
+export * from "./lib/types/event.types";
