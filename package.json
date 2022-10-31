@@ -1,10 +1,10 @@
 {
-  "name": "@istanbul/events",
-  "version": "0.0.7",
-  "description": "Events package of istanbul framework",
-  "homepage": "https://github.com/istanbulnode/events#readme",
+  "name": "@galatajs/events",
+  "version": "0.1.1",
+  "description": "Events package of galatajs framework",
+  "homepage": "https://github.com/galatajs/events#readme",
   "keywords": [
-    "istanbul",
+    "galatajs",
     "events",
     "lifecycle",
     "event-emitter"
@@ -13,10 +13,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/istanbulnode/events.git"
+    "url": "https://github.com/galatajs/events.git"
   },
   "bugs": {
-    "url": "https://github.com/istanbulnode/events/issues"
+    "url": "https://github.com/galatajs/events/issues"
   },
   "directories": {
     "lib": "lib",

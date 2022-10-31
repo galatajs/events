@@ -2,29 +2,29 @@
 <br>
 <img src="https://avatars.githubusercontent.com/u/108695351?s=200&v=4" width="128" height="128">
 </p>
-<h3 align="center">@istanbul/events</h3>
+<h3 align="center">@galatajs/events</h3>
 <p align="center">
   Lifecycle for your schemas at any scale.
 </p>
 
 ### What Is It?
 
-Server Side Event Package. Do you want to do something in customer service when there is a record in the product table? That's called lifecycle and ``@istanbul/events`` provides it.
+Server Side Event Package. Do you want to do something in customer service when there is a record in the product table? That's called lifecycle and ``@galatajs/events`` provides it.
 
-You don't have to use ``istanbul`` framework, `@istanbul/events` is a nodejs package.
+You don't have to use ``galatajs`` framework, `@galatajs/events` is a nodejs package.
 
-🔗 [access on npm](https://www.npmjs.com/package/@istanbul/events)
+🔗 [access on npm](https://www.npmjs.com/package/@galatajs/events)
 
 ### Installation
 
 ```sh
-npm install @istanbul/events
+npm install @galatajs/events
 ```
 
 > or with yarn
 >
 > ```
-> yarn add @istanbul/events
+> yarn add @galatajs/events
 > ```
 
 
@@ -36,7 +36,7 @@ Take a look at the example folder for example usage!
 
 ```typescript
 
-import { createEvent } from "@istanbul/events";
+import { createEvent } from "@galatajs/events";
 
 let totalPrice = 0;
 
